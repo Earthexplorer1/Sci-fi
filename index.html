@@ -3,8 +3,9 @@
 <hr>
 <em><h2>~Useful Resources~</h2></em>
 <hr>
- <a href="https://www.appbrewery.co/p/web-development-course-resources
-         " target="_blank" title="Link title" class="link-class">App Brewery Resources</a>
+ <a   href="https://www.appbrewery.co/p/web-development-course-resources
+         " target="_blank" title="Link title" class="link-class"
+     style="display: block; text-align: center;">App Brewery Resources</a>
 <hr>
 <em><h2>~HTML~</h2></em>
 <hr>
@@ -17,6 +18,7 @@
 <h3><!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="css\styles.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
@@ -24,6 +26,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap" rel="stylesheet">
+   <!--note that in hr there's top,sides and bottom borders -->
+  <!--also notice how you write a note in css vs html -->
   <style>/* Internal CSS */
     h2{color: #FDB827;
       font-family: 'IBM Plex Mono', monospace;
@@ -53,13 +57,13 @@
 <u><h3>3.Basic Elements</h3></u>
 <ul type="i">
   <li>use "ul" & "li" for unordered list(bullet points)/for roman type="i"/for numbers use "ol"
-    <br>
+<br>
 <li>use <em>"emphasis"</em> for italicizing
 <br>
 <li>use <strong>"strong"</strong> for bold
 <br>
 <li>use <img src="images\calm.jpg" alt="Image description" width="500" height="300" align="center"> for inserting image
-    <br>
+<br>
 <li>use anchor tag for hyperlink to any website or file <!--The <a> HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.-->   <a href="https://www.example.com" target="_blank" title="Link title" class="link-class">name of website to which youve given link</a>
 <br>
   <li>
@@ -88,13 +92,20 @@
 
       <input type="submit" value="Submit">
     </form>
-  </ol>
+  </ul>
 <hr>
 <em><h2>~CSS~</h2></em>
 <hr>
 <u><h3>1.Inline>Internal>External</h3></u>
-<ol>
-    <li>use style="background-color: color" after "body" to change color.(Inline CSS)
-  <li>Within the "head" section, create a "style" tag. Be sure to follow standard CSS syntax, including selectors, properties, and values.(Internal CSS)
-    <li>
- 
+<ul>
+  <li>use style="background-color: color" after "body" to change color.(Inline CSS)</li>
+<li>Within the "head" section, create a "style" tag. Be sure to follow standard CSS syntax, including selectors, properties, and values.(Internal CSS)
+<li> external CSS advantages over internal or inline CSS. HTML code is kept clean and uncluttered, makes it easier to maintain and update your styles, allows you to reuse styles across multiple pages.Add a link to the external CSS file in the <head> section. 
+</ul>
+  <u><h3>2.CSS syntax</h3></u>
+  <ul>
+  <li>CSS syntax:selector {property: value;}</li>
+<li>use "class=name" to differentiate an html element, then use .name in css to make it a selector.n words inside class heading makes n classes.</li>
+<img  class="spaceship circular"  src="images\Spaceship-Transparent-Background.png" alt="spaceship"width="50" height="50">
+<li>use "id=name" same as class by using #name, diff. is just that class's name can be used any no. of times, id can't.</li>
+<li>A pseudo-class in CSS is a keyword added to a selector that specifies a special state of the selected element.Pseudo-classes are a powerful tool in CSS that allow you to create dynamic and interactive web pages, can be used in combination with other CSS features to create complex and responsive designs.</li>
