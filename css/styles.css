@@ -1,0 +1,8 @@
+hr {width:100%;
+    border-style: dotted none none;
+    color:white;
+    border-width:1.5px;}
+
+   .spaceship {background-color:aqua;} 
+   .circular {border-radius: 100%;}
+   img:hover{background-color: gold;}
